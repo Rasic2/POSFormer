@@ -2,7 +2,7 @@ from ase.io import read, write
 from ase.optimize import BFGS
 from m3gnet.models import M3GNet, M3GNetCalculator, Potential
 
-from posformer.structure import traj2dump
+from posformer.structure import traj2dump, traj2xdatcar
 
 pretrained_model = M3GNet.load()  # 强制重新下载
 
@@ -17,4 +17,4 @@ opt.run(fmax=0.05)  # 设置力收敛阈值
 
 write("CONTCAR", atoms)
 
-traj2dump()
+traj2xdatcar()

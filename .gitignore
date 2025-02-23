@@ -1,0 +1,6 @@
+.idea/
+
+POSCAR
+CONTCAR
+*.dump
+*.traj

@@ -1,6 +1,11 @@
-tensorflow-deps==2.10.0
-tensorflow-macos==2.10.0
-tensorflow-metal==0.6.0
+# Win
+tensorflow==2.10.0; sys_platform == 'win32'
+
+# MACOS
+tensorflow-deps==2.10.0; sys_platform == 'darwin'
+tensorflow-macos==2.10.0; sys_platform == 'darwin'
+tensorflow-metal==0.6.0; sys_platform == 'darwin'
+
 keras==2.10.0
 pytorch==1.12.1
 dgl==0.9.1
